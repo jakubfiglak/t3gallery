@@ -1,9 +1,4 @@
-import {
-  SignInButton,
-  SignOutButton,
-  SignedIn,
-  SignedOut,
-} from "@clerk/nextjs";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export const TopNav = () => {
   return (
@@ -15,7 +10,7 @@ export const TopNav = () => {
           <SignInButton />
         </SignedOut>
         <SignedIn>
-          <SignOutButton />
+          <UserButton />
         </SignedIn>
       </div>
     </nav>
